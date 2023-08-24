@@ -1,5 +1,4 @@
-console.log("js ok");
-
+// creiamo un array con i membri
 const members = [
   {
     name: "Wayne Barnett",
@@ -32,3 +31,15 @@ const members = [
     photo: "barbara-ramos-graphic-designer.jpg",
   },
 ];
+const cardsContainer = document.getElementById(`cards-container`);
+// creiamo un ciclo "for"
+
+for (member of members) {
+  cardsContainer.innerHTML += `
+    <div class="card col-4 mt-3 d-flex align-items-center text-center ">
+        <div class="card-body">
+            <img src="./img/${member.photo}">
+            <h5 class ="card-title"> ${member.name}
+            <p class "card-text"> ${member.position}
+    `;
+}
