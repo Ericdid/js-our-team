@@ -39,7 +39,7 @@ for (member of members) {
     <div class="card col-4 mt-3 d-flex align-items-center text-center ">
         <div class="card-body">
             <img src="./img/${member.photo}">
-            <h5 class ="card-title"> ${member.name}
-            <p class "card-text"> ${member.position}
+            <h2 class ="card-title"> ${member.name}
+            <h5 class "card-text"> ${member.position}
     `;
 }
